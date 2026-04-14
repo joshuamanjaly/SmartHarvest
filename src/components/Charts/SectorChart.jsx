@@ -46,7 +46,7 @@ export default function SectorChart({ positionsWithPnL }) {
     });
 
   return (
-    <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl border border-gray-800/60 p-5">
+    <div className="glass-panel p-5">
       <h2 className="text-lg font-semibold text-gray-200 mb-4">
         Sector P&L Breakdown
       </h2>

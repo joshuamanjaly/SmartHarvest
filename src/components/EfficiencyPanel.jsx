@@ -67,7 +67,7 @@ export default function EfficiencyPanel({ rankedLosses, selected }) {
     });
 
   return (
-    <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl border border-gray-800/60 overflow-hidden">
+    <div className="glass-panel overflow-hidden">
       <div className="px-5 py-4 border-b border-gray-800/60 flex items-center justify-between">
         <h2 className="text-lg font-semibold text-gray-200">
           Efficiency Ranking
@@ -153,17 +153,6 @@ export default function EfficiencyPanel({ rankedLosses, selected }) {
         })}
       </div>
 
-      {/* CSS keyframe animations — GPU-accelerated, 60fps */}
-      <style>{`
-        @keyframes flashGreen {
-          0% { background-color: rgba(16, 185, 129, 0.25); }
-          100% { background-color: rgba(16, 185, 129, 0.04); }
-        }
-        @keyframes flashRed {
-          0% { background-color: rgba(239, 68, 68, 0.25); }
-          100% { background-color: transparent; }
-        }
-      `}</style>
     </div>
   );
 }

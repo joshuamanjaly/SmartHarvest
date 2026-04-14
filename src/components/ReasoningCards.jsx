@@ -27,7 +27,7 @@ export default function ReasoningCards({ selected, targetOffset }) {
   };
 
   return (
-    <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl border border-gray-800/60 overflow-hidden">
+    <div className="glass-panel overflow-hidden">
       <div className="px-5 py-4 border-b border-gray-800/60 flex items-center justify-between">
         <h2 className="text-lg font-semibold text-gray-200">
           Harvest Reasoning
@@ -124,19 +124,6 @@ export default function ReasoningCards({ selected, targetOffset }) {
         ))}
       </div>
 
-      {/* Stagger animation — CSS-only, 60fps */}
-      <style>{`
-        @keyframes staggerIn {
-          from {
-            opacity: 0;
-            transform: translateY(8px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
     </div>
   );
 }

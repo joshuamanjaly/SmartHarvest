@@ -52,7 +52,7 @@ export default function LossBarChart({ rankedLosses, selected }) {
     });
 
   return (
-    <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl border border-gray-800/60 p-5">
+    <div className="glass-panel p-5">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-semibold text-gray-200">
           Top 10 Loss Contributors

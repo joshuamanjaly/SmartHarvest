@@ -66,7 +66,7 @@ export default function ReportGenerator({ harvestResult, dataSource }) {
   const top10 = harvestResult.selected.slice(0, 10);
 
   return (
-    <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl border border-gray-800/60 overflow-hidden">
+    <div className="glass-panel overflow-hidden">
       <div className="px-5 py-4 border-b border-gray-800/60 flex items-center justify-between">
         <h2 className="text-lg font-semibold text-gray-200">Report</h2>
         <button

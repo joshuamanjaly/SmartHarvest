@@ -1,14 +1,11 @@
 import { useMemo } from "react";
 
 /**
- * OffsetSlider — Range: $0 to total gains, step $100
- * Live label showing selected dollar amount.
- * Every input event reruns runHarvest() via parent state update.
+ * OffsetSlider — Glass-panel slider with tick marks at 25/50/75%
  */
 export default function OffsetSlider({ value, max, onChange }) {
   const pct = useMemo(() => (max > 0 ? (value / max) * 100 : 0), [value, max]);
 
-  // Gradient color stops based on percentage
   const gradientColor = useMemo(() => {
     if (pct < 33) return "from-blue-500 to-cyan-500";
     if (pct < 66) return "from-violet-500 to-purple-500";
@@ -16,22 +13,29 @@ export default function OffsetSlider({ value, max, onChange }) {
   }, [pct]);
 
   return (
-    <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl border border-gray-800/60 p-5">
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-semibold text-gray-200">Target Offset</h2>
+    <div className="glass-panel p-6">
+      <div className="flex items-center justify-between mb-5">
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-gray-400">
+              <path d="M2 8h12M8 2v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+            </svg>
+          </div>
+          <h2 className="text-[15px] font-semibold text-gray-200">Target Offset</h2>
+        </div>
         <div className="flex items-baseline gap-2">
-          <span className={`text-2xl font-bold bg-gradient-to-r ${gradientColor} bg-clip-text text-transparent`}>
+          <span className={`text-2xl font-bold font-mono-data bg-gradient-to-r ${gradientColor} bg-clip-text text-transparent`}>
             ${value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
           </span>
-          <span className="text-xs text-gray-500">
+          <span className="text-xs text-gray-600 font-mono-data">
             / ${max.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
           </span>
         </div>
       </div>
 
       {/* Slider track */}
-      <div className="relative mt-2 mb-3">
-        <div className="relative h-2 bg-gray-800 rounded-full overflow-hidden">
+      <div className="relative mt-2 mb-4">
+        <div className="relative h-2.5 bg-gray-800/80 rounded-full overflow-hidden">
           <div
             className={`absolute top-0 left-0 h-full bg-gradient-to-r ${gradientColor} rounded-full transition-[width] duration-75`}
             style={{ width: `${pct}%` }}
@@ -44,21 +48,38 @@ export default function OffsetSlider({ value, max, onChange }) {
           step={100}
           value={value}
           onChange={(e) => onChange(Number(e.target.value))}
-          className="absolute inset-0 w-full h-2 opacity-0 cursor-pointer"
+          className="absolute inset-0 w-full h-2.5 opacity-0 cursor-pointer"
           aria-label="Target offset amount"
         />
-        {/* Thumb indicator */}
+        {/* Thumb */}
         <div
-          className={`absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white shadow-lg shadow-black/30 border-2 border-gray-600 pointer-events-none transition-[left] duration-75`}
-          style={{ left: `calc(${pct}% - 8px)` }}
+          className="absolute top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-white shadow-lg shadow-black/40 border-2 border-gray-500 pointer-events-none transition-[left] duration-75"
+          style={{ left: `calc(${pct}% - 10px)` }}
         />
+        {/* Tick marks */}
+        {[25, 50, 75].map((tick) => (
+          <div
+            key={tick}
+            className="absolute top-1/2 -translate-y-1/2 w-0.5 h-4 bg-gray-700/60 pointer-events-none"
+            style={{ left: `${tick}%` }}
+          />
+        ))}
       </div>
 
       {/* Labels */}
-      <div className="flex justify-between text-xs text-gray-600">
-        <span>$0</span>
-        <span className="text-gray-500">{pct.toFixed(0)}% of gains</span>
-        <span>${max.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+      <div className="flex justify-between text-[11px] text-gray-600">
+        <span className="font-mono-data">$0</span>
+        <div className="flex gap-6">
+          {[25, 50, 75].map((tick) => (
+            <span key={tick} className="text-gray-600/50 font-mono-data">{tick}%</span>
+          ))}
+        </div>
+        <div className="flex items-center gap-2">
+          <span className={`font-semibold bg-gradient-to-r ${gradientColor} bg-clip-text text-transparent`}>
+            {pct.toFixed(0)}%
+          </span>
+          <span className="text-gray-700">of gains</span>
+        </div>
       </div>
     </div>
   );

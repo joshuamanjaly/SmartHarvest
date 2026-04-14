@@ -19,14 +19,12 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [targetOffset, setTargetOffset] = useState(0);
 
-  // Run test assertions in development mode
   useEffect(() => {
     if (import.meta.env.DEV) {
       runTestAssertions();
     }
   }, []);
 
-  // Load portfolio data on mount
   useEffect(() => {
     let cancelled = false;
 
@@ -54,20 +52,17 @@ function App() {
     };
   }, []);
 
-  // Memoized harvest result — only recalculates when positions or targetOffset change
   const harvestResult = useMemo(() => {
     if (positions.length === 0) return null;
     return runHarvest(positions, targetOffset);
   }, [positions, targetOffset]);
 
-  // Set initial targetOffset to 50% of total gains when data loads
   useEffect(() => {
     if (harvestResult && targetOffset === 0) {
       setTargetOffset(Math.round(harvestResult.totalGains * 0.5));
     }
   }, [harvestResult, targetOffset]);
 
-  // Inline edit handler — updates a single position's field
   const handleUpdatePosition = useCallback((ticker, field, value) => {
     setPositions((prev) =>
       prev.map((p) =>
@@ -81,18 +76,17 @@ function App() {
     );
   }, []);
 
-  // Scenario preset handler
   const handleScenario = useCallback((offset) => {
     setTargetOffset(offset);
   }, []);
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-950 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <div className="relative">
-            <div className="animate-spin rounded-full h-14 w-14 border-2 border-gray-800 border-t-emerald-400 mx-auto mb-4"></div>
-            <div className="animate-ping absolute inset-0 rounded-full h-14 w-14 border border-emerald-400/20 mx-auto"></div>
+            <div className="animate-spin rounded-full h-14 w-14 border-2 border-gray-800 border-t-emerald-400 mx-auto mb-4" />
+            <div className="animate-ping absolute inset-0 rounded-full h-14 w-14 border border-emerald-400/20 mx-auto" />
           </div>
           <p className="text-gray-400 text-lg mt-2">Loading portfolio data...</p>
           <p className="text-gray-600 text-xs mt-1">Checking Alpha Vantage API...</p>
@@ -102,17 +96,21 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 text-gray-100">
+    <div className="min-h-screen text-gray-100">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* ── Header ── */}
         <Header
           dataSource={dataSource}
           totalGains={harvestResult?.totalGains ?? 0}
           onScenario={handleScenario}
+          activeScenario={targetOffset}
         />
 
         {harvestResult && (
-          <div className="space-y-6">
+          <div
+            className="space-y-6"
+            style={{ animation: "fadeSlideUp 0.6s ease-out" }}
+          >
             {/* ── Tax Summary Cards ── */}
             <TaxSummaryCards
               taxBefore={harvestResult.taxBefore}
@@ -147,7 +145,7 @@ function App() {
               />
             </div>
 
-            {/* ── Portfolio Table ── */}
+            {/* ── Portfolio Table (collapsible) ── */}
             <PortfolioTable
               positionsWithPnL={harvestResult.positionsWithPnL}
               onUpdatePosition={handleUpdatePosition}
