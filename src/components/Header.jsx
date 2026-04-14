@@ -1,9 +1,20 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
 /**
- * Header — Clean typographic logo, API badge, scenario buttons with active state
+ * Header — Logo, data-source toggle, API badge, scenario buttons
  */
-export default function Header({ dataSource, totalGains, onScenario, activeScenario }) {
+export default function Header({
+  dataSource,
+  totalGains,
+  onScenario,
+  activeScenario,
+  onToggleDataSource,
+  isLiveRequested,
+  isSwitching,
+  failedLive,
+  fallbackReason,
+  liveStats,
+}) {
   const scenarios = [
     { label: "Conservative", pct: 0.25, color: "from-blue-500 to-cyan-500", activeRing: "ring-blue-500/30" },
     { label: "Balanced", pct: 0.5, color: "from-violet-500 to-purple-500", activeRing: "ring-violet-500/30" },
@@ -19,10 +30,29 @@ export default function Header({ dataSource, totalGains, onScenario, activeScena
 
   const currentPct = totalGains > 0 ? activeScenario / totalGains : 0;
 
+  /* Tooltip for fallback warning */
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  const fallbackMessage = (() => {
+    if (fallbackReason === "api_quota_exceeded") {
+      return "Live data exceeded Alpha Vantage free-tier quota. Showing mock dataset.";
+    }
+    if (fallbackReason === "api_rate_limited") {
+      return "Alpha Vantage rate limit reached. Showing mock dataset.";
+    }
+    if (fallbackReason === "missing_api_key") {
+      return "Missing or invalid API key. Showing mock dataset.";
+    }
+    if (fallbackReason === "network_error") {
+      return "Network/API request failed. Showing mock dataset.";
+    }
+    return "Live data fetch failed. Showing mock dataset.";
+  })();
+
   return (
     <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-8">
-      {/* Left — logo + badge */}
-      <div className="flex items-center gap-4">
+      {/* Left — logo + toggle + badge */}
+      <div className="flex items-center gap-4 flex-wrap">
         <div className="relative">
           {/* Subtle glow */}
           <div className="absolute -inset-2 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-2xl blur-xl opacity-50 animate-[pulseGlow_4s_ease-in-out_infinite]" />
@@ -34,18 +64,75 @@ export default function Header({ dataSource, totalGains, onScenario, activeScena
           </div>
         </div>
 
-        <span
-          className={`shrink-0 px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm ${
-            dataSource === "live"
-              ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-              : "bg-amber-500/10 text-amber-400 border border-amber-500/20"
-          }`}
-        >
-          <span className="inline-block w-1.5 h-1.5 rounded-full mr-1.5 align-middle animate-pulse"
-            style={{ backgroundColor: dataSource === "live" ? "#34d399" : "#fbbf24" }}
-          />
-          {dataSource === "live" ? "Live" : "Mock"}
-        </span>
+        {/* ── Data source toggle ── */}
+        <div className="relative flex items-center gap-2.5">
+          <div
+            className="glass-panel px-3 py-2 rounded-xl flex items-center gap-3 cursor-pointer select-none"
+            onClick={() => !isSwitching && onToggleDataSource?.()}
+            id="data-source-toggle"
+          >
+            {/* Labels */}
+            {/* <span className={`text-[10px] font-semibold uppercase tracking-wider transition-colors duration-200 ${
+              !isLiveRequested ? "text-amber-400" : "text-gray-600"
+            }`}>
+              Mock
+            </span> */}
+
+            {/* Toggle track */}
+            <div className={`relative w-10 h-[22px] rounded-full transition-all duration-300 ${isSwitching
+                ? "bg-gray-700"
+                : isLiveRequested
+                  ? "bg-gradient-to-r from-emerald-600 to-teal-500 shadow-[0_0_12px_rgba(52,211,153,0.3)]"
+                  : "bg-gradient-to-r from-amber-600 to-orange-500 shadow-[0_0_12px_rgba(251,191,36,0.2)]"
+              }`}>
+              {/* Thumb */}
+              <div className={`absolute top-[3px] w-4 h-4 rounded-full bg-white shadow-md transition-all duration-300 ${isSwitching
+                  ? "left-[12px] animate-pulse"
+                  : isLiveRequested
+                    ? "left-[22px]"
+                    : "left-[3px]"
+                }`} />
+            </div>
+
+            <div className="flex flex-col">
+              <span className={`text-[10px] font-semibold uppercase tracking-wider transition-colors duration-200 ${isLiveRequested ? "text-emerald-400" : "text-amber-400"
+                }`}>
+                {isLiveRequested ? "Live" : "Mock"}
+              </span>
+              {isLiveRequested && !isSwitching && dataSource === "live" && liveStats && (
+                <span className="text-[8px] text-gray-500 font-medium -mt-0.5">
+                  ({liveStats.coveredCount}/{liveStats.total})
+                </span>
+              )}
+              {isLiveRequested && !isSwitching && dataSource === "mock" && failedLive && (
+                <span className="text-[8px] text-amber-400 font-semibold -mt-0.5 uppercase tracking-wider">
+                  fallback
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Fallback warning tooltip */}
+          {failedLive && dataSource === "mock" && isLiveRequested && !isSwitching && (
+            <div
+              className="relative"
+              onMouseEnter={() => setShowTooltip(true)}
+              onMouseLeave={() => setShowTooltip(false)}
+            >
+              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-amber-500/15 border border-amber-500/25 text-amber-400 cursor-help text-xs font-bold">
+                !
+              </span>
+              {showTooltip && (
+                <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 w-56 p-3 glass-panel rounded-xl text-xs text-gray-300 leading-relaxed z-50 shadow-2xl"
+                  style={{ animation: "fadeSlideUp 0.2s ease-out" }}
+                >
+                  <p className="font-semibold text-amber-400 mb-1">API Fallback</p>
+                  <p>{fallbackMessage}</p>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Right — scenario buttons */}

@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
-import { loadPortfolioData } from "./utils/dataService";
+import { loadPortfolioData, loadMockData } from "./utils/dataService";
 import { runHarvest, runTestAssertions } from "./utils/harvester";
 import Header from "./components/Header";
 import PortfolioTable from "./components/PortfolioTable";
@@ -12,12 +12,21 @@ import ReportGenerator from "./components/ReportGenerator";
 import DonutChart from "./components/Charts/DonutChart";
 import LossBarChart from "./components/Charts/LossBarChart";
 import SectorChart from "./components/Charts/SectorChart";
+import LandingPage from "./components/LandingPage";
 
 function App() {
+  const [page, setPage] = useState("landing");
   const [positions, setPositions] = useState([]);
   const [dataSource, setDataSource] = useState(null);
   const [loading, setLoading] = useState(true);
   const [targetOffset, setTargetOffset] = useState(0);
+
+  /* ── Data-source toggle state ── */
+  const [isLiveRequested, setIsLiveRequested] = useState(true); // user preference
+  const [isSwitching, setIsSwitching] = useState(false);
+  const [failedLive, setFailedLive] = useState(false);
+  const [fallbackReason, setFallbackReason] = useState(null);
+  const [liveStats, setLiveStats] = useState({ fetchCount: 0, cacheCount: 0, coveredCount: 0, total: 0 });
 
   useEffect(() => {
     if (import.meta.env.DEV) {
@@ -25,23 +34,49 @@ function App() {
     }
   }, []);
 
+  /* ── Core data loader — runs on mount and when isLiveRequested changes ── */
   useEffect(() => {
+    // Don't load data while on landing page
+    if (page === "landing") return;
+
     let cancelled = false;
 
     async function loadData() {
       setLoading(true);
+      setIsSwitching(true);
+      setFailedLive(false);
+      setFallbackReason(null);
+
       try {
-        const { positions: loadedPositions, dataSource: source } =
-          await loadPortfolioData();
+        const forceMock = !isLiveRequested;
+        const result = await loadPortfolioData(forceMock);
+
         if (!cancelled) {
-          setPositions(loadedPositions);
-          setDataSource(source);
+          setPositions(result.positions);
+          setDataSource(result.dataSource);
+          setFailedLive(result.failedLive ?? false);
+          setFallbackReason(result.fallbackReason ?? null);
+          setLiveStats({
+            fetchCount: result.liveTickerCount || 0,
+            cacheCount: result.cachedTickerCount || 0,
+            coveredCount: result.coveredTickerCount || 0,
+            total: result.totalTickers || 0
+          });
         }
       } catch (err) {
         console.error("Failed to load portfolio data:", err);
+        // Emergency fallback
+        if (!cancelled) {
+          const fallback = loadMockData();
+          setPositions(fallback.positions);
+          setDataSource(fallback.dataSource);
+          setFailedLive(true);
+          setFallbackReason("network_error");
+        }
       } finally {
         if (!cancelled) {
           setLoading(false);
+          setIsSwitching(false);
         }
       }
     }
@@ -50,7 +85,7 @@ function App() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [page, isLiveRequested]);
 
   const harvestResult = useMemo(() => {
     if (positions.length === 0) return null;
@@ -80,6 +115,18 @@ function App() {
     setTargetOffset(offset);
   }, []);
 
+  /* ── Toggle data source ── */
+  const handleToggleDataSource = useCallback(() => {
+    setTargetOffset(0); // reset offset so it recalculates
+    setIsLiveRequested((prev) => !prev);
+  }, []);
+
+  /* ── Landing page ── */
+  if (page === "landing") {
+    return <LandingPage onEnter={() => setPage("dashboard")} />;
+  }
+
+  /* ── Loading state ── */
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -88,13 +135,18 @@ function App() {
             <div className="animate-spin rounded-full h-14 w-14 border-2 border-gray-800 border-t-emerald-400 mx-auto mb-4" />
             <div className="animate-ping absolute inset-0 rounded-full h-14 w-14 border border-emerald-400/20 mx-auto" />
           </div>
-          <p className="text-gray-400 text-lg mt-2">Loading portfolio data...</p>
-          <p className="text-gray-600 text-xs mt-1">Checking Alpha Vantage API...</p>
+          <p className="text-gray-400 text-lg mt-2">
+            {isLiveRequested ? "Fetching live market data…" : "Loading mock portfolio…"}
+          </p>
+          <p className="text-gray-600 text-xs mt-1">
+            {isLiveRequested ? "Connecting to Alpha Vantage API…" : "Preparing 200 positions…"}
+          </p>
         </div>
       </div>
     );
   }
 
+  /* ── Dashboard ── */
   return (
     <div className="min-h-screen text-gray-100">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -104,6 +156,12 @@ function App() {
           totalGains={harvestResult?.totalGains ?? 0}
           onScenario={handleScenario}
           activeScenario={targetOffset}
+          onToggleDataSource={handleToggleDataSource}
+          isLiveRequested={isLiveRequested}
+          isSwitching={isSwitching}
+          failedLive={failedLive}
+          fallbackReason={fallbackReason}
+          liveStats={liveStats}
         />
 
         {harvestResult && (
