@@ -67,14 +67,21 @@ export default function OffsetSlider({ value, max, onChange }) {
       </div>
 
       {/* Labels */}
-      <div className="flex justify-between text-[11px] text-gray-600">
-        <span className="font-mono-data">$0</span>
-        <div className="flex gap-6">
-          {[25, 50, 75].map((tick) => (
-            <span key={tick} className="text-gray-600/50 font-mono-data">{tick}%</span>
-          ))}
-        </div>
-        <div className="flex items-center gap-2">
+      <div className="relative text-[11px] text-gray-600 h-5">
+        {/* $0 label — left edge */}
+        <span className="absolute left-0 font-mono-data">$0</span>
+        {/* 25 / 50 / 75 % tick labels — centred exactly on their marks */}
+        {[25, 50, 75].map((tick) => (
+          <span
+            key={tick}
+            className="absolute -translate-x-1/2 text-gray-600/50 font-mono-data"
+            style={{ left: `${tick}%` }}
+          >
+            {tick}%
+          </span>
+        ))}
+        {/* current pct — right edge */}
+        <div className="absolute right-0 flex items-center gap-2">
           <span className={`font-semibold bg-gradient-to-r ${gradientColor} bg-clip-text text-transparent`}>
             {pct.toFixed(0)}%
           </span>

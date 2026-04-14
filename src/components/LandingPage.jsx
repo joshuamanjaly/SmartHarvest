@@ -239,6 +239,7 @@ export default function LandingPage({ onEnter }) {
           <div className="hidden sm:flex items-center gap-8">
             <a href="#features" className="text-sm text-gray-400 hover:text-white transition-colors duration-200">Features</a>
             <a href="#how-it-works" className="text-sm text-gray-400 hover:text-white transition-colors duration-200">How It Works</a>
+            <a href="#learn" className="text-sm text-gray-400 hover:text-white transition-colors duration-200">Learn</a>
             <button
               id="nav-launch-btn"
               onClick={onEnter}
@@ -548,6 +549,165 @@ export default function LandingPage({ onEnter }) {
                   <div className="absolute -bottom-4 -left-4 w-20 h-20 rounded-full bg-gradient-to-br from-violet-500/15 to-purple-500/15 blur-xl" />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Learn & Explore Section ── */}
+      <section id="learn" className="py-20 sm:py-28 relative overflow-hidden">
+        {/* Glow accent */}
+        <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-teal-500/5 rounded-full blur-[150px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-violet-500/5 rounded-full blur-[130px] pointer-events-none" />
+
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          {/* Heading */}
+          <div className="text-center mb-14">
+            <p className="text-emerald-400 text-xs font-semibold uppercase tracking-widest mb-3">
+              Learn More
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
+              Not sure where to start?
+            </h2>
+            <p className="text-gray-400 max-w-xl mx-auto">
+              Explore curated videos and expert blogs that explain tax-loss harvesting
+              from beginner fundamentals to advanced strategies.
+            </p>
+          </div>
+
+          {/* ── VIDEO GRID ── */}
+          <div className="mb-16">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-rose-500/20 to-orange-500/20 flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white">Video Guides</h3>
+              <span className="ml-2 text-xs text-gray-600 bg-white/[0.04] border border-white/[0.06] rounded-full px-3 py-0.5">4 videos</span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {[
+                { id: "WvZGJG8YSwg", title: "What Is Tax-Loss Harvesting?" },
+                { id: "9kIPeaqOYA4", title: "Tax-Loss Harvesting Explained" },
+                { id: "wUzc8NpBT58", title: "How to Use Tax-Loss Harvesting" },
+                { id: "tBZNIEZvJJo", title: "Tax-Loss Harvesting Deep Dive" },
+              ].map((video, i) => (
+                <div
+                  key={video.id}
+                  className="group relative"
+                  style={{ animation: `fadeSlideUp 0.6s ease-out ${0.1 + i * 0.1}s both` }}
+                >
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-rose-500/20 to-orange-500/20 rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
+                  <div className="relative glass-panel rounded-2xl overflow-hidden">
+                    <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                      <iframe
+                        src={`https://www.youtube.com/embed/${video.id}`}
+                        title={video.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full"
+                        style={{ border: "none" }}
+                      />
+                    </div>
+                    <div className="p-4 border-t border-white/[0.04]">
+                      <p className="text-sm font-semibold text-white group-hover:text-emerald-300 transition-colors duration-200">{video.title}</p>
+                      <p className="text-xs text-gray-500 mt-1 flex items-center gap-1.5">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        YouTube · Tax-Loss Harvesting
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ── BLOG GRID ── */}
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500/20 to-purple-500/20 flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white">Expert Blogs</h3>
+              <span className="ml-2 text-xs text-gray-600 bg-white/[0.04] border border-white/[0.06] rounded-full px-3 py-0.5">4 reads</span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {[
+                {
+                  url: "https://www.heygotrade.com/en/blog/tax-loss-harvesting-how-it-works/",
+                  source: "HeyGoTrade",
+                  title: "Tax-Loss Harvesting: How It Works",
+                  description: "An excellent starting point covering the basic 'sell-at-a-loss-to-offset-gains' math with clear examples of how it impacts your tax bill.",
+                  tag: "Beginner",
+                  tagColor: "from-emerald-500 to-teal-500",
+                  badge: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+                },
+                {
+                  url: "https://www.whitecoatinvestor.com/tax-loss-harvesting/",
+                  source: "White Coat Investor",
+                  title: "How to Tax-Loss Harvest",
+                  description: "Famous for 'boots on the ground' technical advice, including specific walkthroughs for platforms like Vanguard. Written for high-income professionals.",
+                  tag: "Advanced",
+                  tagColor: "from-violet-500 to-purple-500",
+                  badge: "bg-violet-500/10 text-violet-400 border-violet-500/20",
+                },
+                {
+                  url: "https://www.wealthfront.com/tax-loss-harvesting",
+                  source: "Wealthfront",
+                  title: "Automated Tax-Loss Harvesting",
+                  description: "Explains how modern robo-advisors automate this process daily using software — a great look at the high-tech side of the strategy.",
+                  tag: "Automation",
+                  tagColor: "from-amber-500 to-orange-500",
+                  badge: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+                },
+                {
+                  url: "https://groww.in/blog/tax-loss-harvesting",
+                  source: "Groww",
+                  title: "Tax-Loss Harvesting (India 2026)",
+                  description: "A recent 2026 guide breaking down specifics for the Indian market, including the 8-year carry-forward rule and STCG vs LTCG differences.",
+                  tag: "India",
+                  tagColor: "from-rose-500 to-pink-500",
+                  badge: "bg-rose-500/10 text-rose-400 border-rose-500/20",
+                },
+              ].map((blog, i) => (
+                <a
+                  key={blog.url}
+                  href={blog.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative block"
+                  style={{ animation: `fadeSlideUp 0.6s ease-out ${0.1 + i * 0.1}s both` }}
+                >
+                  <div className={`absolute -inset-0.5 bg-gradient-to-r ${blog.tagColor} rounded-2xl opacity-0 group-hover:opacity-15 blur-xl transition-opacity duration-500`} />
+                  <div className="relative glass-panel p-5 rounded-2xl h-full flex flex-col gap-3 transition-all duration-300 group-hover:border-white/10 group-hover:translate-y-[-2px]">
+                    <div className="flex items-start justify-between gap-3">
+                      <div>
+                        <span className={`inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${blog.badge} mb-2`}>
+                          {blog.tag}
+                        </span>
+                        <h4 className="text-sm font-bold text-white leading-snug group-hover:text-emerald-300 transition-colors duration-200">
+                          {blog.title}
+                        </h4>
+                      </div>
+                      <div className="shrink-0 w-8 h-8 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-gray-500 group-hover:text-white group-hover:border-white/10 transition-all duration-200 mt-0.5">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                          <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <p className="text-xs text-gray-400 leading-relaxed flex-1">{blog.description}</p>
+                    <div className="flex items-center gap-2 pt-2 border-t border-white/[0.04]">
+                      <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${blog.tagColor}`} />
+                      <span className="text-[11px] text-gray-500 font-medium">{blog.source}</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>
