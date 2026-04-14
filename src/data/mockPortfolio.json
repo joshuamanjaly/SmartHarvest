@@ -1,0 +1,1802 @@
+[
+  {
+    "ticker": "AAPL",
+    "companyName": "Apple Inc.",
+    "sector": "tech",
+    "buyPrice": 30.13,
+    "currentPrice": 21.66,
+    "quantity": 369,
+    "purchaseDate": "2025-11-19"
+  },
+  {
+    "ticker": "MSFT",
+    "companyName": "Microsoft Corp.",
+    "sector": "tech",
+    "buyPrice": 108.51,
+    "currentPrice": 65.76,
+    "quantity": 259,
+    "purchaseDate": "2024-11-28"
+  },
+  {
+    "ticker": "GOOGL",
+    "companyName": "Alphabet Inc.",
+    "sector": "tech",
+    "buyPrice": 72.83,
+    "currentPrice": 47.06,
+    "quantity": 451,
+    "purchaseDate": "2024-12-04"
+  },
+  {
+    "ticker": "AMZN",
+    "companyName": "Amazon.com Inc.",
+    "sector": "tech",
+    "buyPrice": 128.96,
+    "currentPrice": 103.55,
+    "quantity": 165,
+    "purchaseDate": "2025-06-22"
+  },
+  {
+    "ticker": "NVDA",
+    "companyName": "NVIDIA Corp.",
+    "sector": "tech",
+    "buyPrice": 243.76,
+    "currentPrice": 155.73,
+    "quantity": 370,
+    "purchaseDate": "2025-09-23"
+  },
+  {
+    "ticker": "META",
+    "companyName": "Meta Platforms Inc.",
+    "sector": "tech",
+    "buyPrice": 82.4,
+    "currentPrice": 52.27,
+    "quantity": 235,
+    "purchaseDate": "2024-08-17"
+  },
+  {
+    "ticker": "TSM",
+    "companyName": "Taiwan Semiconductor",
+    "sector": "tech",
+    "buyPrice": 123.39,
+    "currentPrice": 104.5,
+    "quantity": 16,
+    "purchaseDate": "2023-12-12"
+  },
+  {
+    "ticker": "AVGO",
+    "companyName": "Broadcom Inc.",
+    "sector": "tech",
+    "buyPrice": 344.33,
+    "currentPrice": 243.54,
+    "quantity": 386,
+    "purchaseDate": "2024-10-12"
+  },
+  {
+    "ticker": "ORCL",
+    "companyName": "Oracle Corp.",
+    "sector": "tech",
+    "buyPrice": 180.25,
+    "currentPrice": 141.18,
+    "quantity": 179,
+    "purchaseDate": "2024-10-02"
+  },
+  {
+    "ticker": "CSCO",
+    "companyName": "Cisco Systems Inc.",
+    "sector": "tech",
+    "buyPrice": 51.12,
+    "currentPrice": 36.7,
+    "quantity": 83,
+    "purchaseDate": "2024-10-20"
+  },
+  {
+    "ticker": "ADBE",
+    "companyName": "Adobe Inc.",
+    "sector": "tech",
+    "buyPrice": 107.11,
+    "currentPrice": 89.31,
+    "quantity": 494,
+    "purchaseDate": "2025-02-26"
+  },
+  {
+    "ticker": "CRM",
+    "companyName": "Salesforce Inc.",
+    "sector": "tech",
+    "buyPrice": 427.32,
+    "currentPrice": 316.89,
+    "quantity": 352,
+    "purchaseDate": "2025-09-22"
+  },
+  {
+    "ticker": "ACN",
+    "companyName": "Accenture plc",
+    "sector": "tech",
+    "buyPrice": 428.17,
+    "currentPrice": 343.61,
+    "quantity": 344,
+    "purchaseDate": "2025-10-28"
+  },
+  {
+    "ticker": "INTC",
+    "companyName": "Intel Corp.",
+    "sector": "tech",
+    "buyPrice": 328.81,
+    "currentPrice": 264.85,
+    "quantity": 407,
+    "purchaseDate": "2025-02-21"
+  },
+  {
+    "ticker": "AMD",
+    "companyName": "Advanced Micro Devices",
+    "sector": "tech",
+    "buyPrice": 41.88,
+    "currentPrice": 34.2,
+    "quantity": 321,
+    "purchaseDate": "2026-01-02"
+  },
+  {
+    "ticker": "IBM",
+    "companyName": "IBM Corp.",
+    "sector": "tech",
+    "buyPrice": 232.69,
+    "currentPrice": 167.47,
+    "quantity": 56,
+    "purchaseDate": "2024-10-10"
+  },
+  {
+    "ticker": "TXN",
+    "companyName": "Texas Instruments",
+    "sector": "tech",
+    "buyPrice": 337.33,
+    "currentPrice": 264.35,
+    "quantity": 335,
+    "purchaseDate": "2024-08-08"
+  },
+  {
+    "ticker": "QCOM",
+    "companyName": "Qualcomm Inc.",
+    "sector": "tech",
+    "buyPrice": 206.33,
+    "currentPrice": 127.85,
+    "quantity": 236,
+    "purchaseDate": "2024-10-25"
+  },
+  {
+    "ticker": "NOW",
+    "companyName": "ServiceNow Inc.",
+    "sector": "tech",
+    "buyPrice": 347.67,
+    "currentPrice": 220.29,
+    "quantity": 373,
+    "purchaseDate": "2024-01-28"
+  },
+  {
+    "ticker": "INTU",
+    "companyName": "Intuit Inc.",
+    "sector": "tech",
+    "buyPrice": 242.49,
+    "currentPrice": 187.48,
+    "quantity": 175,
+    "purchaseDate": "2025-10-26"
+  },
+  {
+    "ticker": "AMAT",
+    "companyName": "Applied Materials",
+    "sector": "tech",
+    "buyPrice": 256.71,
+    "currentPrice": 176.33,
+    "quantity": 36,
+    "purchaseDate": "2024-08-13"
+  },
+  {
+    "ticker": "PANW",
+    "companyName": "Palo Alto Networks",
+    "sector": "tech",
+    "buyPrice": 33.8,
+    "currentPrice": 22.81,
+    "quantity": 197,
+    "purchaseDate": "2025-05-08"
+  },
+  {
+    "ticker": "MU",
+    "companyName": "Micron Technology",
+    "sector": "tech",
+    "buyPrice": 80.06,
+    "currentPrice": 59.48,
+    "quantity": 150,
+    "purchaseDate": "2026-01-04"
+  },
+  {
+    "ticker": "SNPS",
+    "companyName": "Synopsys Inc.",
+    "sector": "tech",
+    "buyPrice": 176.27,
+    "currentPrice": 118.53,
+    "quantity": 469,
+    "purchaseDate": "2025-10-15"
+  },
+  {
+    "ticker": "CDNS",
+    "companyName": "Cadence Design",
+    "sector": "tech",
+    "buyPrice": 358.64,
+    "currentPrice": 257.08,
+    "quantity": 67,
+    "purchaseDate": "2026-02-14"
+  },
+  {
+    "ticker": "LRCX",
+    "companyName": "Lam Research",
+    "sector": "tech",
+    "buyPrice": 354.97,
+    "currentPrice": 266.97,
+    "quantity": 42,
+    "purchaseDate": "2024-10-16"
+  },
+  {
+    "ticker": "KLAC",
+    "companyName": "KLA Corp.",
+    "sector": "tech",
+    "buyPrice": 131.44,
+    "currentPrice": 99.02,
+    "quantity": 160,
+    "purchaseDate": "2024-12-26"
+  },
+  {
+    "ticker": "MRVL",
+    "companyName": "Marvell Technology",
+    "sector": "tech",
+    "buyPrice": 143.79,
+    "currentPrice": 86.66,
+    "quantity": 102,
+    "purchaseDate": "2024-07-13"
+  },
+  {
+    "ticker": "ADI",
+    "companyName": "Analog Devices",
+    "sector": "tech",
+    "buyPrice": 343.82,
+    "currentPrice": 406.32,
+    "quantity": 182,
+    "purchaseDate": "2025-12-16"
+  },
+  {
+    "ticker": "FTNT",
+    "companyName": "Fortinet Inc.",
+    "sector": "tech",
+    "buyPrice": 97.28,
+    "currentPrice": 135.13,
+    "quantity": 364,
+    "purchaseDate": "2024-07-12"
+  },
+  {
+    "ticker": "PLTR",
+    "companyName": "Palantir Technologies",
+    "sector": "tech",
+    "buyPrice": 225.71,
+    "currentPrice": 280.22,
+    "quantity": 150,
+    "purchaseDate": "2025-11-08"
+  },
+  {
+    "ticker": "CRWD",
+    "companyName": "CrowdStrike Holdings",
+    "sector": "tech",
+    "buyPrice": 201.72,
+    "currentPrice": 248.21,
+    "quantity": 179,
+    "purchaseDate": "2025-07-19"
+  },
+  {
+    "ticker": "WDAY",
+    "companyName": "Workday Inc.",
+    "sector": "tech",
+    "buyPrice": 193.74,
+    "currentPrice": 223.29,
+    "quantity": 179,
+    "purchaseDate": "2025-01-02"
+  },
+  {
+    "ticker": "SNOW",
+    "companyName": "Snowflake Inc.",
+    "sector": "tech",
+    "buyPrice": 378.11,
+    "currentPrice": 521.12,
+    "quantity": 483,
+    "purchaseDate": "2024-12-11"
+  },
+  {
+    "ticker": "TEAM",
+    "companyName": "Atlassian Corp.",
+    "sector": "tech",
+    "buyPrice": 233.97,
+    "currentPrice": 280.6,
+    "quantity": 437,
+    "purchaseDate": "2023-11-05"
+  },
+  {
+    "ticker": "DDOG",
+    "companyName": "Datadog Inc.",
+    "sector": "tech",
+    "buyPrice": 167.7,
+    "currentPrice": 219.2,
+    "quantity": 339,
+    "purchaseDate": "2025-02-08"
+  },
+  {
+    "ticker": "ZS",
+    "companyName": "Zscaler Inc.",
+    "sector": "tech",
+    "buyPrice": 302.01,
+    "currentPrice": 422.56,
+    "quantity": 488,
+    "purchaseDate": "2025-11-22"
+  },
+  {
+    "ticker": "NET",
+    "companyName": "Cloudflare Inc.",
+    "sector": "tech",
+    "buyPrice": 46.17,
+    "currentPrice": 59.36,
+    "quantity": 91,
+    "purchaseDate": "2025-01-21"
+  },
+  {
+    "ticker": "HUBS",
+    "companyName": "HubSpot Inc.",
+    "sector": "tech",
+    "buyPrice": 347.21,
+    "currentPrice": 421,
+    "quantity": 112,
+    "purchaseDate": "2025-07-13"
+  },
+  {
+    "ticker": "MNDY",
+    "companyName": "Monday.com Ltd.",
+    "sector": "tech",
+    "buyPrice": 195.72,
+    "currentPrice": 271.93,
+    "quantity": 290,
+    "purchaseDate": "2024-05-09"
+  },
+  {
+    "ticker": "TTD",
+    "companyName": "The Trade Desk",
+    "sector": "tech",
+    "buyPrice": 404.88,
+    "currentPrice": 515.48,
+    "quantity": 233,
+    "purchaseDate": "2025-07-11"
+  },
+  {
+    "ticker": "BILL",
+    "companyName": "BILL Holdings",
+    "sector": "tech",
+    "buyPrice": 90.51,
+    "currentPrice": 117.03,
+    "quantity": 305,
+    "purchaseDate": "2025-11-15"
+  },
+  {
+    "ticker": "SQ",
+    "companyName": "Block Inc.",
+    "sector": "tech",
+    "buyPrice": 118.84,
+    "currentPrice": 160.9,
+    "quantity": 243,
+    "purchaseDate": "2024-07-16"
+  },
+  {
+    "ticker": "SHOP",
+    "companyName": "Shopify Inc.",
+    "sector": "tech",
+    "buyPrice": 52.79,
+    "currentPrice": 69.03,
+    "quantity": 339,
+    "purchaseDate": "2025-06-24"
+  },
+  {
+    "ticker": "TWLO",
+    "companyName": "Twilio Inc.",
+    "sector": "tech",
+    "buyPrice": 115.32,
+    "currentPrice": 134.04,
+    "quantity": 232,
+    "purchaseDate": "2023-11-16"
+  },
+  {
+    "ticker": "MDB",
+    "companyName": "MongoDB Inc.",
+    "sector": "tech",
+    "buyPrice": 244.25,
+    "currentPrice": 283.48,
+    "quantity": 325,
+    "purchaseDate": "2025-10-07"
+  },
+  {
+    "ticker": "OKTA",
+    "companyName": "Okta Inc.",
+    "sector": "tech",
+    "buyPrice": 176.83,
+    "currentPrice": 220.19,
+    "quantity": 424,
+    "purchaseDate": "2023-12-12"
+  },
+  {
+    "ticker": "ZI",
+    "companyName": "ZoomInfo Tech",
+    "sector": "tech",
+    "buyPrice": 251.29,
+    "currentPrice": 292.27,
+    "quantity": 368,
+    "purchaseDate": "2025-08-28"
+  },
+  {
+    "ticker": "U",
+    "companyName": "Unity Software",
+    "sector": "tech",
+    "buyPrice": 39.27,
+    "currentPrice": 49.76,
+    "quantity": 320,
+    "purchaseDate": "2024-10-16"
+  },
+  {
+    "ticker": "PATH",
+    "companyName": "UiPath Inc.",
+    "sector": "tech",
+    "buyPrice": 383.52,
+    "currentPrice": 533.37,
+    "quantity": 228,
+    "purchaseDate": "2023-12-27"
+  },
+  {
+    "ticker": "CFLT",
+    "companyName": "Confluent Inc.",
+    "sector": "tech",
+    "buyPrice": 40,
+    "currentPrice": 46.37,
+    "quantity": 243,
+    "purchaseDate": "2024-09-10"
+  },
+  {
+    "ticker": "ESTC",
+    "companyName": "Elastic N.V.",
+    "sector": "tech",
+    "buyPrice": 247.76,
+    "currentPrice": 326.1,
+    "quantity": 294,
+    "purchaseDate": "2025-02-04"
+  },
+  {
+    "ticker": "DOCN",
+    "companyName": "DigitalOcean",
+    "sector": "tech",
+    "buyPrice": 339.87,
+    "currentPrice": 459.31,
+    "quantity": 486,
+    "purchaseDate": "2026-02-28"
+  },
+  {
+    "ticker": "ANET",
+    "companyName": "Arista Networks",
+    "sector": "tech",
+    "buyPrice": 206.81,
+    "currentPrice": 288.59,
+    "quantity": 485,
+    "purchaseDate": "2025-12-05"
+  },
+  {
+    "ticker": "SMCI",
+    "companyName": "Super Micro Computer",
+    "sector": "tech",
+    "buyPrice": 426.28,
+    "currentPrice": 575.15,
+    "quantity": 190,
+    "purchaseDate": "2026-03-06"
+  },
+  {
+    "ticker": "ARM",
+    "companyName": "Arm Holdings plc",
+    "sector": "tech",
+    "buyPrice": 401.79,
+    "currentPrice": 525.18,
+    "quantity": 462,
+    "purchaseDate": "2024-01-15"
+  },
+  {
+    "ticker": "DELL",
+    "companyName": "Dell Technologies",
+    "sector": "tech",
+    "buyPrice": 88.65,
+    "currentPrice": 112.48,
+    "quantity": 33,
+    "purchaseDate": "2026-01-02"
+  },
+  {
+    "ticker": "HPE",
+    "companyName": "Hewlett Packard Ent.",
+    "sector": "tech",
+    "buyPrice": 201.4,
+    "currentPrice": 268.42,
+    "quantity": 363,
+    "purchaseDate": "2025-11-01"
+  },
+  {
+    "ticker": "HPQ",
+    "companyName": "HP Inc.",
+    "sector": "tech",
+    "buyPrice": 346.36,
+    "currentPrice": 452.41,
+    "quantity": 249,
+    "purchaseDate": "2024-02-06"
+  },
+  {
+    "ticker": "WDC",
+    "companyName": "Western Digital",
+    "sector": "tech",
+    "buyPrice": 137.51,
+    "currentPrice": 165.54,
+    "quantity": 331,
+    "purchaseDate": "2025-11-18"
+  },
+  {
+    "ticker": "STX",
+    "companyName": "Seagate Technology",
+    "sector": "tech",
+    "buyPrice": 126.88,
+    "currentPrice": 165.69,
+    "quantity": 64,
+    "purchaseDate": "2024-09-28"
+  },
+  {
+    "ticker": "ON",
+    "companyName": "ON Semiconductor",
+    "sector": "tech",
+    "buyPrice": 80.04,
+    "currentPrice": 102.74,
+    "quantity": 197,
+    "purchaseDate": "2025-05-09"
+  },
+  {
+    "ticker": "MCHP",
+    "companyName": "Microchip Technology",
+    "sector": "tech",
+    "buyPrice": 41.19,
+    "currentPrice": 48.37,
+    "quantity": 136,
+    "purchaseDate": "2024-01-18"
+  },
+  {
+    "ticker": "NXPI",
+    "companyName": "NXP Semiconductors",
+    "sector": "tech",
+    "buyPrice": 240.22,
+    "currentPrice": 276.73,
+    "quantity": 397,
+    "purchaseDate": "2026-02-13"
+  },
+  {
+    "ticker": "SWKS",
+    "companyName": "Skyworks Solutions",
+    "sector": "tech",
+    "buyPrice": 92.86,
+    "currentPrice": 115.78,
+    "quantity": 23,
+    "purchaseDate": "2025-08-04"
+  },
+  {
+    "ticker": "GLW",
+    "companyName": "Corning Inc.",
+    "sector": "tech",
+    "buyPrice": 109.61,
+    "currentPrice": 127.45,
+    "quantity": 352,
+    "purchaseDate": "2025-02-22"
+  },
+  {
+    "ticker": "KEYS",
+    "companyName": "Keysight Technologies",
+    "sector": "tech",
+    "buyPrice": 378.56,
+    "currentPrice": 487.35,
+    "quantity": 256,
+    "purchaseDate": "2023-11-03"
+  },
+  {
+    "ticker": "ANSS",
+    "companyName": "ANSYS Inc.",
+    "sector": "tech",
+    "buyPrice": 145.56,
+    "currentPrice": 193.97,
+    "quantity": 147,
+    "purchaseDate": "2024-04-24"
+  },
+  {
+    "ticker": "ZBRA",
+    "companyName": "Zebra Technologies",
+    "sector": "tech",
+    "buyPrice": 115.97,
+    "currentPrice": 145.02,
+    "quantity": 295,
+    "purchaseDate": "2024-11-20"
+  },
+  {
+    "ticker": "CTSH",
+    "companyName": "Cognizant Tech",
+    "sector": "tech",
+    "buyPrice": 301.85,
+    "currentPrice": 373.49,
+    "quantity": 246,
+    "purchaseDate": "2024-10-16"
+  },
+  {
+    "ticker": "JNJ",
+    "companyName": "Johnson & Johnson",
+    "sector": "healthcare",
+    "buyPrice": 292.04,
+    "currentPrice": 191.51,
+    "quantity": 439,
+    "purchaseDate": "2025-10-30"
+  },
+  {
+    "ticker": "UNH",
+    "companyName": "UnitedHealth Group",
+    "sector": "healthcare",
+    "buyPrice": 150.79,
+    "currentPrice": 122.74,
+    "quantity": 223,
+    "purchaseDate": "2023-11-19"
+  },
+  {
+    "ticker": "LLY",
+    "companyName": "Eli Lilly & Co.",
+    "sector": "healthcare",
+    "buyPrice": 329.81,
+    "currentPrice": 228.56,
+    "quantity": 261,
+    "purchaseDate": "2025-05-07"
+  },
+  {
+    "ticker": "PFE",
+    "companyName": "Pfizer Inc.",
+    "sector": "healthcare",
+    "buyPrice": 232.36,
+    "currentPrice": 186.02,
+    "quantity": 373,
+    "purchaseDate": "2025-10-26"
+  },
+  {
+    "ticker": "ABBV",
+    "companyName": "AbbVie Inc.",
+    "sector": "healthcare",
+    "buyPrice": 92.15,
+    "currentPrice": 75.07,
+    "quantity": 162,
+    "purchaseDate": "2024-03-08"
+  },
+  {
+    "ticker": "MRK",
+    "companyName": "Merck & Co.",
+    "sector": "healthcare",
+    "buyPrice": 282.16,
+    "currentPrice": 188.43,
+    "quantity": 173,
+    "purchaseDate": "2024-06-13"
+  },
+  {
+    "ticker": "TMO",
+    "companyName": "Thermo Fisher Scientific",
+    "sector": "healthcare",
+    "buyPrice": 265.54,
+    "currentPrice": 211.2,
+    "quantity": 371,
+    "purchaseDate": "2025-01-03"
+  },
+  {
+    "ticker": "ABT",
+    "companyName": "Abbott Laboratories",
+    "sector": "healthcare",
+    "buyPrice": 102.53,
+    "currentPrice": 66.16,
+    "quantity": 181,
+    "purchaseDate": "2023-11-29"
+  },
+  {
+    "ticker": "DHR",
+    "companyName": "Danaher Corp.",
+    "sector": "healthcare",
+    "buyPrice": 349.98,
+    "currentPrice": 265.94,
+    "quantity": 168,
+    "purchaseDate": "2025-09-16"
+  },
+  {
+    "ticker": "BMY",
+    "companyName": "Bristol-Myers Squibb",
+    "sector": "healthcare",
+    "buyPrice": 311.63,
+    "currentPrice": 201.96,
+    "quantity": 426,
+    "purchaseDate": "2026-03-08"
+  },
+  {
+    "ticker": "AMGN",
+    "companyName": "Amgen Inc.",
+    "sector": "healthcare",
+    "buyPrice": 110.81,
+    "currentPrice": 85.1,
+    "quantity": 342,
+    "purchaseDate": "2024-05-16"
+  },
+  {
+    "ticker": "GILD",
+    "companyName": "Gilead Sciences",
+    "sector": "healthcare",
+    "buyPrice": 310.25,
+    "currentPrice": 242.84,
+    "quantity": 312,
+    "purchaseDate": "2025-03-31"
+  },
+  {
+    "ticker": "ISRG",
+    "companyName": "Intuitive Surgical",
+    "sector": "healthcare",
+    "buyPrice": 177.41,
+    "currentPrice": 134.85,
+    "quantity": 441,
+    "purchaseDate": "2024-11-22"
+  },
+  {
+    "ticker": "VRTX",
+    "companyName": "Vertex Pharmaceuticals",
+    "sector": "healthcare",
+    "buyPrice": 152.6,
+    "currentPrice": 92.83,
+    "quantity": 367,
+    "purchaseDate": "2025-10-16"
+  },
+  {
+    "ticker": "REGN",
+    "companyName": "Regeneron Pharma.",
+    "sector": "healthcare",
+    "buyPrice": 83.86,
+    "currentPrice": 69.86,
+    "quantity": 104,
+    "purchaseDate": "2024-03-08"
+  },
+  {
+    "ticker": "MDT",
+    "companyName": "Medtronic plc",
+    "sector": "healthcare",
+    "buyPrice": 149.58,
+    "currentPrice": 126.78,
+    "quantity": 12,
+    "purchaseDate": "2025-12-27"
+  },
+  {
+    "ticker": "SYK",
+    "companyName": "Stryker Corp.",
+    "sector": "healthcare",
+    "buyPrice": 253.12,
+    "currentPrice": 348.63,
+    "quantity": 210,
+    "purchaseDate": "2025-07-01"
+  },
+  {
+    "ticker": "BSX",
+    "companyName": "Boston Scientific",
+    "sector": "healthcare",
+    "buyPrice": 64.36,
+    "currentPrice": 89.46,
+    "quantity": 120,
+    "purchaseDate": "2024-06-16"
+  },
+  {
+    "ticker": "CI",
+    "companyName": "Cigna Group",
+    "sector": "healthcare",
+    "buyPrice": 109.74,
+    "currentPrice": 127.2,
+    "quantity": 268,
+    "purchaseDate": "2024-07-24"
+  },
+  {
+    "ticker": "ELV",
+    "companyName": "Elevance Health",
+    "sector": "healthcare",
+    "buyPrice": 90.85,
+    "currentPrice": 124.49,
+    "quantity": 455,
+    "purchaseDate": "2024-02-15"
+  },
+  {
+    "ticker": "HCA",
+    "companyName": "HCA Healthcare",
+    "sector": "healthcare",
+    "buyPrice": 221.89,
+    "currentPrice": 271.21,
+    "quantity": 114,
+    "purchaseDate": "2025-04-19"
+  },
+  {
+    "ticker": "ZTS",
+    "companyName": "Zoetis Inc.",
+    "sector": "healthcare",
+    "buyPrice": 110.09,
+    "currentPrice": 151.89,
+    "quantity": 440,
+    "purchaseDate": "2024-01-31"
+  },
+  {
+    "ticker": "IQV",
+    "companyName": "IQVIA Holdings",
+    "sector": "healthcare",
+    "buyPrice": 91.81,
+    "currentPrice": 121.93,
+    "quantity": 140,
+    "purchaseDate": "2025-01-06"
+  },
+  {
+    "ticker": "IDXX",
+    "companyName": "IDEXX Laboratories",
+    "sector": "healthcare",
+    "buyPrice": 382.21,
+    "currentPrice": 446.43,
+    "quantity": 476,
+    "purchaseDate": "2024-02-11"
+  },
+  {
+    "ticker": "MRNA",
+    "companyName": "Moderna Inc.",
+    "sector": "healthcare",
+    "buyPrice": 311.03,
+    "currentPrice": 433.34,
+    "quantity": 131,
+    "purchaseDate": "2026-01-29"
+  },
+  {
+    "ticker": "BIIB",
+    "companyName": "Biogen Inc.",
+    "sector": "healthcare",
+    "buyPrice": 89.05,
+    "currentPrice": 112.77,
+    "quantity": 437,
+    "purchaseDate": "2025-02-09"
+  },
+  {
+    "ticker": "DXCM",
+    "companyName": "DexCom Inc.",
+    "sector": "healthcare",
+    "buyPrice": 107.47,
+    "currentPrice": 147.25,
+    "quantity": 126,
+    "purchaseDate": "2025-07-09"
+  },
+  {
+    "ticker": "A",
+    "companyName": "Agilent Technologies",
+    "sector": "healthcare",
+    "buyPrice": 150.73,
+    "currentPrice": 181.98,
+    "quantity": 256,
+    "purchaseDate": "2025-12-15"
+  },
+  {
+    "ticker": "HOLX",
+    "companyName": "Hologic Inc.",
+    "sector": "healthcare",
+    "buyPrice": 389.34,
+    "currentPrice": 493.35,
+    "quantity": 114,
+    "purchaseDate": "2024-02-20"
+  },
+  {
+    "ticker": "ALGN",
+    "companyName": "Align Technology",
+    "sector": "healthcare",
+    "buyPrice": 224.6,
+    "currentPrice": 296.7,
+    "quantity": 158,
+    "purchaseDate": "2024-09-07"
+  },
+  {
+    "ticker": "VEEV",
+    "companyName": "Veeva Systems",
+    "sector": "healthcare",
+    "buyPrice": 354.17,
+    "currentPrice": 460.56,
+    "quantity": 224,
+    "purchaseDate": "2024-08-29"
+  },
+  {
+    "ticker": "EXAS",
+    "companyName": "Exact Sciences",
+    "sector": "healthcare",
+    "buyPrice": 379.13,
+    "currentPrice": 459.92,
+    "quantity": 357,
+    "purchaseDate": "2025-06-23"
+  },
+  {
+    "ticker": "INCY",
+    "companyName": "Incyte Corp.",
+    "sector": "healthcare",
+    "buyPrice": 126.69,
+    "currentPrice": 173.08,
+    "quantity": 171,
+    "purchaseDate": "2025-11-15"
+  },
+  {
+    "ticker": "TECH",
+    "companyName": "Bio-Techne Corp.",
+    "sector": "healthcare",
+    "buyPrice": 303.78,
+    "currentPrice": 419.89,
+    "quantity": 163,
+    "purchaseDate": "2024-11-29"
+  },
+  {
+    "ticker": "PODD",
+    "companyName": "Insulet Corp.",
+    "sector": "healthcare",
+    "buyPrice": 232,
+    "currentPrice": 313.51,
+    "quantity": 214,
+    "purchaseDate": "2024-05-30"
+  },
+  {
+    "ticker": "NVCR",
+    "companyName": "NovoCure Ltd.",
+    "sector": "healthcare",
+    "buyPrice": 54.55,
+    "currentPrice": 71.53,
+    "quantity": 411,
+    "purchaseDate": "2024-12-19"
+  },
+  {
+    "ticker": "HZNP",
+    "companyName": "Horizon Therapeutics",
+    "sector": "healthcare",
+    "buyPrice": 258.52,
+    "currentPrice": 310.09,
+    "quantity": 325,
+    "purchaseDate": "2024-07-08"
+  },
+  {
+    "ticker": "ALNY",
+    "companyName": "Alnylam Pharma.",
+    "sector": "healthcare",
+    "buyPrice": 287.87,
+    "currentPrice": 399.71,
+    "quantity": 105,
+    "purchaseDate": "2025-07-21"
+  },
+  {
+    "ticker": "SRPT",
+    "companyName": "Sarepta Therapeutics",
+    "sector": "healthcare",
+    "buyPrice": 300.3,
+    "currentPrice": 376.71,
+    "quantity": 176,
+    "purchaseDate": "2024-02-10"
+  },
+  {
+    "ticker": "RARE",
+    "companyName": "Ultragenyx Pharma.",
+    "sector": "healthcare",
+    "buyPrice": 300.25,
+    "currentPrice": 418.02,
+    "quantity": 116,
+    "purchaseDate": "2024-01-18"
+  },
+  {
+    "ticker": "XOM",
+    "companyName": "Exxon Mobil Corp.",
+    "sector": "energy",
+    "buyPrice": 40.57,
+    "currentPrice": 30.52,
+    "quantity": 173,
+    "purchaseDate": "2025-10-30"
+  },
+  {
+    "ticker": "CVX",
+    "companyName": "Chevron Corp.",
+    "sector": "energy",
+    "buyPrice": 51.13,
+    "currentPrice": 35.03,
+    "quantity": 61,
+    "purchaseDate": "2025-02-21"
+  },
+  {
+    "ticker": "COP",
+    "companyName": "ConocoPhillips",
+    "sector": "energy",
+    "buyPrice": 93.44,
+    "currentPrice": 62.92,
+    "quantity": 421,
+    "purchaseDate": "2025-11-08"
+  },
+  {
+    "ticker": "SLB",
+    "companyName": "Schlumberger Ltd.",
+    "sector": "energy",
+    "buyPrice": 33.23,
+    "currentPrice": 22.56,
+    "quantity": 80,
+    "purchaseDate": "2025-12-25"
+  },
+  {
+    "ticker": "EOG",
+    "companyName": "EOG Resources",
+    "sector": "energy",
+    "buyPrice": 55.63,
+    "currentPrice": 34.97,
+    "quantity": 41,
+    "purchaseDate": "2025-11-10"
+  },
+  {
+    "ticker": "MPC",
+    "companyName": "Marathon Petroleum",
+    "sector": "energy",
+    "buyPrice": 66.51,
+    "currentPrice": 43.56,
+    "quantity": 205,
+    "purchaseDate": "2025-02-01"
+  },
+  {
+    "ticker": "PXD",
+    "companyName": "Pioneer Natural Res.",
+    "sector": "energy",
+    "buyPrice": 46.55,
+    "currentPrice": 28.9,
+    "quantity": 430,
+    "purchaseDate": "2024-08-08"
+  },
+  {
+    "ticker": "PSX",
+    "companyName": "Phillips 66",
+    "sector": "energy",
+    "buyPrice": 114.45,
+    "currentPrice": 85.1,
+    "quantity": 369,
+    "purchaseDate": "2025-10-24"
+  },
+  {
+    "ticker": "VLO",
+    "companyName": "Valero Energy",
+    "sector": "energy",
+    "buyPrice": 121.96,
+    "currentPrice": 85.54,
+    "quantity": 145,
+    "purchaseDate": "2025-08-03"
+  },
+  {
+    "ticker": "OXY",
+    "companyName": "Occidental Petroleum",
+    "sector": "energy",
+    "buyPrice": 26.33,
+    "currentPrice": 19.02,
+    "quantity": 419,
+    "purchaseDate": "2024-07-03"
+  },
+  {
+    "ticker": "HAL",
+    "companyName": "Halliburton Co.",
+    "sector": "energy",
+    "buyPrice": 155.65,
+    "currentPrice": 103.52,
+    "quantity": 222,
+    "purchaseDate": "2025-09-05"
+  },
+  {
+    "ticker": "DVN",
+    "companyName": "Devon Energy",
+    "sector": "energy",
+    "buyPrice": 141.61,
+    "currentPrice": 119.51,
+    "quantity": 134,
+    "purchaseDate": "2024-03-16"
+  },
+  {
+    "ticker": "WMB",
+    "companyName": "Williams Companies",
+    "sector": "energy",
+    "buyPrice": 78.05,
+    "currentPrice": 102.86,
+    "quantity": 389,
+    "purchaseDate": "2023-12-27"
+  },
+  {
+    "ticker": "KMI",
+    "companyName": "Kinder Morgan",
+    "sector": "energy",
+    "buyPrice": 153.71,
+    "currentPrice": 193.18,
+    "quantity": 386,
+    "purchaseDate": "2025-07-23"
+  },
+  {
+    "ticker": "HES",
+    "companyName": "Hess Corp.",
+    "sector": "energy",
+    "buyPrice": 45.48,
+    "currentPrice": 52.8,
+    "quantity": 337,
+    "purchaseDate": "2025-04-16"
+  },
+  {
+    "ticker": "BKR",
+    "companyName": "Baker Hughes",
+    "sector": "energy",
+    "buyPrice": 69.32,
+    "currentPrice": 90.69,
+    "quantity": 424,
+    "purchaseDate": "2024-01-20"
+  },
+  {
+    "ticker": "FANG",
+    "companyName": "Diamondback Energy",
+    "sector": "energy",
+    "buyPrice": 132.09,
+    "currentPrice": 169.54,
+    "quantity": 47,
+    "purchaseDate": "2024-08-07"
+  },
+  {
+    "ticker": "OKE",
+    "companyName": "ONEOK Inc.",
+    "sector": "energy",
+    "buyPrice": 111.53,
+    "currentPrice": 148.4,
+    "quantity": 221,
+    "purchaseDate": "2026-01-08"
+  },
+  {
+    "ticker": "CTRA",
+    "companyName": "Coterra Energy",
+    "sector": "energy",
+    "buyPrice": 154.87,
+    "currentPrice": 211.4,
+    "quantity": 331,
+    "purchaseDate": "2026-03-26"
+  },
+  {
+    "ticker": "EQT",
+    "companyName": "EQT Corp.",
+    "sector": "energy",
+    "buyPrice": 57.06,
+    "currentPrice": 76.24,
+    "quantity": 33,
+    "purchaseDate": "2024-04-05"
+  },
+  {
+    "ticker": "MRO",
+    "companyName": "Marathon Oil",
+    "sector": "energy",
+    "buyPrice": 94.4,
+    "currentPrice": 121.01,
+    "quantity": 364,
+    "purchaseDate": "2025-08-26"
+  },
+  {
+    "ticker": "APA",
+    "companyName": "APA Corp.",
+    "sector": "energy",
+    "buyPrice": 28.19,
+    "currentPrice": 37.98,
+    "quantity": 471,
+    "purchaseDate": "2023-11-02"
+  },
+  {
+    "ticker": "ENPH",
+    "companyName": "Enphase Energy",
+    "sector": "energy",
+    "buyPrice": 126.52,
+    "currentPrice": 155.94,
+    "quantity": 481,
+    "purchaseDate": "2025-04-30"
+  },
+  {
+    "ticker": "SEDG",
+    "companyName": "SolarEdge Tech.",
+    "sector": "energy",
+    "buyPrice": 29.5,
+    "currentPrice": 35.26,
+    "quantity": 266,
+    "purchaseDate": "2023-12-15"
+  },
+  {
+    "ticker": "FSLR",
+    "companyName": "First Solar Inc.",
+    "sector": "energy",
+    "buyPrice": 123.04,
+    "currentPrice": 151.02,
+    "quantity": 483,
+    "purchaseDate": "2025-03-31"
+  },
+  {
+    "ticker": "RUN",
+    "companyName": "Sunrun Inc.",
+    "sector": "energy",
+    "buyPrice": 35.94,
+    "currentPrice": 41.58,
+    "quantity": 14,
+    "purchaseDate": "2024-12-03"
+  },
+  {
+    "ticker": "NEE",
+    "companyName": "NextEra Energy",
+    "sector": "energy",
+    "buyPrice": 135.8,
+    "currentPrice": 185.74,
+    "quantity": 28,
+    "purchaseDate": "2026-01-02"
+  },
+  {
+    "ticker": "DUK",
+    "companyName": "Duke Energy",
+    "sector": "energy",
+    "buyPrice": 156.91,
+    "currentPrice": 204.29,
+    "quantity": 138,
+    "purchaseDate": "2025-06-20"
+  },
+  {
+    "ticker": "SO",
+    "companyName": "Southern Company",
+    "sector": "energy",
+    "buyPrice": 112.15,
+    "currentPrice": 150.83,
+    "quantity": 499,
+    "purchaseDate": "2025-10-15"
+  },
+  {
+    "ticker": "D",
+    "companyName": "Dominion Energy",
+    "sector": "energy",
+    "buyPrice": 67.99,
+    "currentPrice": 83.96,
+    "quantity": 12,
+    "purchaseDate": "2026-03-14"
+  },
+  {
+    "ticker": "JPM",
+    "companyName": "JPMorgan Chase",
+    "sector": "finance",
+    "buyPrice": 225.29,
+    "currentPrice": 188.42,
+    "quantity": 399,
+    "purchaseDate": "2025-07-18"
+  },
+  {
+    "ticker": "BAC",
+    "companyName": "Bank of America",
+    "sector": "finance",
+    "buyPrice": 190.55,
+    "currentPrice": 145.24,
+    "quantity": 52,
+    "purchaseDate": "2024-10-20"
+  },
+  {
+    "ticker": "WFC",
+    "companyName": "Wells Fargo & Co.",
+    "sector": "finance",
+    "buyPrice": 80.37,
+    "currentPrice": 49.7,
+    "quantity": 236,
+    "purchaseDate": "2024-11-07"
+  },
+  {
+    "ticker": "GS",
+    "companyName": "Goldman Sachs",
+    "sector": "finance",
+    "buyPrice": 180.47,
+    "currentPrice": 149.58,
+    "quantity": 92,
+    "purchaseDate": "2025-08-10"
+  },
+  {
+    "ticker": "MS",
+    "companyName": "Morgan Stanley",
+    "sector": "finance",
+    "buyPrice": 114.17,
+    "currentPrice": 84.91,
+    "quantity": 278,
+    "purchaseDate": "2025-12-14"
+  },
+  {
+    "ticker": "BLK",
+    "companyName": "BlackRock Inc.",
+    "sector": "finance",
+    "buyPrice": 112.15,
+    "currentPrice": 92.06,
+    "quantity": 227,
+    "purchaseDate": "2025-06-11"
+  },
+  {
+    "ticker": "SCHW",
+    "companyName": "Charles Schwab",
+    "sector": "finance",
+    "buyPrice": 160.9,
+    "currentPrice": 111.86,
+    "quantity": 219,
+    "purchaseDate": "2024-06-29"
+  },
+  {
+    "ticker": "C",
+    "companyName": "Citigroup Inc.",
+    "sector": "finance",
+    "buyPrice": 114.17,
+    "currentPrice": 85.44,
+    "quantity": 444,
+    "purchaseDate": "2026-02-26"
+  },
+  {
+    "ticker": "AXP",
+    "companyName": "American Express",
+    "sector": "finance",
+    "buyPrice": 295.83,
+    "currentPrice": 203.34,
+    "quantity": 313,
+    "purchaseDate": "2025-01-24"
+  },
+  {
+    "ticker": "USB",
+    "companyName": "U.S. Bancorp",
+    "sector": "finance",
+    "buyPrice": 231.4,
+    "currentPrice": 194.68,
+    "quantity": 391,
+    "purchaseDate": "2024-10-02"
+  },
+  {
+    "ticker": "PNC",
+    "companyName": "PNC Financial Svcs.",
+    "sector": "finance",
+    "buyPrice": 90.68,
+    "currentPrice": 70.07,
+    "quantity": 285,
+    "purchaseDate": "2025-07-24"
+  },
+  {
+    "ticker": "TFC",
+    "companyName": "Truist Financial",
+    "sector": "finance",
+    "buyPrice": 30.63,
+    "currentPrice": 23.84,
+    "quantity": 86,
+    "purchaseDate": "2024-07-19"
+  },
+  {
+    "ticker": "COF",
+    "companyName": "Capital One",
+    "sector": "finance",
+    "buyPrice": 129.79,
+    "currentPrice": 166.29,
+    "quantity": 93,
+    "purchaseDate": "2025-09-25"
+  },
+  {
+    "ticker": "BK",
+    "companyName": "Bank of New York",
+    "sector": "finance",
+    "buyPrice": 171.66,
+    "currentPrice": 217.87,
+    "quantity": 411,
+    "purchaseDate": "2025-05-23"
+  },
+  {
+    "ticker": "STT",
+    "companyName": "State Street Corp.",
+    "sector": "finance",
+    "buyPrice": 130.64,
+    "currentPrice": 152.64,
+    "quantity": 194,
+    "purchaseDate": "2024-02-07"
+  },
+  {
+    "ticker": "AIG",
+    "companyName": "American Intl. Group",
+    "sector": "finance",
+    "buyPrice": 306.78,
+    "currentPrice": 376.85,
+    "quantity": 331,
+    "purchaseDate": "2025-06-22"
+  },
+  {
+    "ticker": "CB",
+    "companyName": "Chubb Ltd.",
+    "sector": "finance",
+    "buyPrice": 273.77,
+    "currentPrice": 362.91,
+    "quantity": 215,
+    "purchaseDate": "2025-08-12"
+  },
+  {
+    "ticker": "MMC",
+    "companyName": "Marsh & McLennan",
+    "sector": "finance",
+    "buyPrice": 325.66,
+    "currentPrice": 383.92,
+    "quantity": 408,
+    "purchaseDate": "2025-11-27"
+  },
+  {
+    "ticker": "AON",
+    "companyName": "Aon plc",
+    "sector": "finance",
+    "buyPrice": 314.93,
+    "currentPrice": 403.58,
+    "quantity": 106,
+    "purchaseDate": "2024-05-19"
+  },
+  {
+    "ticker": "ICE",
+    "companyName": "Intercontinental Exch.",
+    "sector": "finance",
+    "buyPrice": 285.35,
+    "currentPrice": 352.55,
+    "quantity": 91,
+    "purchaseDate": "2025-12-09"
+  },
+  {
+    "ticker": "CME",
+    "companyName": "CME Group",
+    "sector": "finance",
+    "buyPrice": 251.17,
+    "currentPrice": 347.43,
+    "quantity": 98,
+    "purchaseDate": "2024-07-11"
+  },
+  {
+    "ticker": "MCO",
+    "companyName": "Moody's Corp.",
+    "sector": "finance",
+    "buyPrice": 224.46,
+    "currentPrice": 277.5,
+    "quantity": 54,
+    "purchaseDate": "2025-10-16"
+  },
+  {
+    "ticker": "SPGI",
+    "companyName": "S&P Global",
+    "sector": "finance",
+    "buyPrice": 222.48,
+    "currentPrice": 275.55,
+    "quantity": 235,
+    "purchaseDate": "2024-12-29"
+  },
+  {
+    "ticker": "MSCI",
+    "companyName": "MSCI Inc.",
+    "sector": "finance",
+    "buyPrice": 318.31,
+    "currentPrice": 382.87,
+    "quantity": 101,
+    "purchaseDate": "2025-03-13"
+  },
+  {
+    "ticker": "FIS",
+    "companyName": "Fidelity Natl. Info.",
+    "sector": "finance",
+    "buyPrice": 277.43,
+    "currentPrice": 382.89,
+    "quantity": 51,
+    "purchaseDate": "2024-03-02"
+  },
+  {
+    "ticker": "PYPL",
+    "companyName": "PayPal Holdings",
+    "sector": "finance",
+    "buyPrice": 181.63,
+    "currentPrice": 211.14,
+    "quantity": 172,
+    "purchaseDate": "2025-01-25"
+  },
+  {
+    "ticker": "V",
+    "companyName": "Visa Inc.",
+    "sector": "finance",
+    "buyPrice": 295.22,
+    "currentPrice": 362.61,
+    "quantity": 341,
+    "purchaseDate": "2023-12-24"
+  },
+  {
+    "ticker": "MA",
+    "companyName": "Mastercard Inc.",
+    "sector": "finance",
+    "buyPrice": 159.53,
+    "currentPrice": 213.33,
+    "quantity": 428,
+    "purchaseDate": "2025-05-28"
+  },
+  {
+    "ticker": "SYF",
+    "companyName": "Synchrony Financial",
+    "sector": "finance",
+    "buyPrice": 63.92,
+    "currentPrice": 77.13,
+    "quantity": 14,
+    "purchaseDate": "2025-07-08"
+  },
+  {
+    "ticker": "DFS",
+    "companyName": "Discover Financial",
+    "sector": "finance",
+    "buyPrice": 329.04,
+    "currentPrice": 412.99,
+    "quantity": 494,
+    "purchaseDate": "2025-08-29"
+  },
+  {
+    "ticker": "WMT",
+    "companyName": "Walmart Inc.",
+    "sector": "consumer",
+    "buyPrice": 58,
+    "currentPrice": 46.1,
+    "quantity": 48,
+    "purchaseDate": "2026-03-26"
+  },
+  {
+    "ticker": "PG",
+    "companyName": "Procter & Gamble",
+    "sector": "consumer",
+    "buyPrice": 42.49,
+    "currentPrice": 26.1,
+    "quantity": 165,
+    "purchaseDate": "2023-11-04"
+  },
+  {
+    "ticker": "KO",
+    "companyName": "Coca-Cola Co.",
+    "sector": "consumer",
+    "buyPrice": 47.37,
+    "currentPrice": 38.14,
+    "quantity": 305,
+    "purchaseDate": "2025-08-26"
+  },
+  {
+    "ticker": "PEP",
+    "companyName": "PepsiCo Inc.",
+    "sector": "consumer",
+    "buyPrice": 99.71,
+    "currentPrice": 63.71,
+    "quantity": 76,
+    "purchaseDate": "2025-10-23"
+  },
+  {
+    "ticker": "COST",
+    "companyName": "Costco Wholesale",
+    "sector": "consumer",
+    "buyPrice": 26.18,
+    "currentPrice": 20.16,
+    "quantity": 222,
+    "purchaseDate": "2026-01-05"
+  },
+  {
+    "ticker": "NKE",
+    "companyName": "Nike Inc.",
+    "sector": "consumer",
+    "buyPrice": 60.71,
+    "currentPrice": 44.15,
+    "quantity": 301,
+    "purchaseDate": "2025-10-19"
+  },
+  {
+    "ticker": "MCD",
+    "companyName": "McDonald's Corp.",
+    "sector": "consumer",
+    "buyPrice": 36.46,
+    "currentPrice": 29.12,
+    "quantity": 23,
+    "purchaseDate": "2026-02-07"
+  },
+  {
+    "ticker": "SBUX",
+    "companyName": "Starbucks Corp.",
+    "sector": "consumer",
+    "buyPrice": 186.37,
+    "currentPrice": 143.56,
+    "quantity": 458,
+    "purchaseDate": "2024-09-02"
+  },
+  {
+    "ticker": "TGT",
+    "companyName": "Target Corp.",
+    "sector": "consumer",
+    "buyPrice": 89.41,
+    "currentPrice": 118.88,
+    "quantity": 205,
+    "purchaseDate": "2025-06-10"
+  },
+  {
+    "ticker": "HD",
+    "companyName": "Home Depot",
+    "sector": "consumer",
+    "buyPrice": 55.56,
+    "currentPrice": 65.08,
+    "quantity": 282,
+    "purchaseDate": "2025-04-03"
+  },
+  {
+    "ticker": "LOW",
+    "companyName": "Lowe's Companies",
+    "sector": "consumer",
+    "buyPrice": 96.8,
+    "currentPrice": 112.31,
+    "quantity": 69,
+    "purchaseDate": "2026-01-04"
+  },
+  {
+    "ticker": "TJX",
+    "companyName": "TJX Companies",
+    "sector": "consumer",
+    "buyPrice": 26.59,
+    "currentPrice": 36.45,
+    "quantity": 112,
+    "purchaseDate": "2025-12-18"
+  },
+  {
+    "ticker": "ROST",
+    "companyName": "Ross Stores",
+    "sector": "consumer",
+    "buyPrice": 71.94,
+    "currentPrice": 94.87,
+    "quantity": 25,
+    "purchaseDate": "2024-08-08"
+  },
+  {
+    "ticker": "DG",
+    "companyName": "Dollar General",
+    "sector": "consumer",
+    "buyPrice": 43.72,
+    "currentPrice": 52.7,
+    "quantity": 11,
+    "purchaseDate": "2025-08-14"
+  },
+  {
+    "ticker": "DLTR",
+    "companyName": "Dollar Tree",
+    "sector": "consumer",
+    "buyPrice": 34.06,
+    "currentPrice": 41.19,
+    "quantity": 414,
+    "purchaseDate": "2024-03-11"
+  },
+  {
+    "ticker": "EL",
+    "companyName": "Estée Lauder",
+    "sector": "consumer",
+    "buyPrice": 219.17,
+    "currentPrice": 278.58,
+    "quantity": 195,
+    "purchaseDate": "2025-02-07"
+  },
+  {
+    "ticker": "CL",
+    "companyName": "Colgate-Palmolive",
+    "sector": "consumer",
+    "buyPrice": 115.71,
+    "currentPrice": 146.54,
+    "quantity": 308,
+    "purchaseDate": "2025-11-23"
+  },
+  {
+    "ticker": "KHC",
+    "companyName": "Kraft Heinz",
+    "sector": "consumer",
+    "buyPrice": 172.92,
+    "currentPrice": 221.78,
+    "quantity": 342,
+    "purchaseDate": "2026-02-23"
+  },
+  {
+    "ticker": "GIS",
+    "companyName": "General Mills",
+    "sector": "consumer",
+    "buyPrice": 125.57,
+    "currentPrice": 168.88,
+    "quantity": 463,
+    "purchaseDate": "2024-11-26"
+  },
+  {
+    "ticker": "CPB",
+    "companyName": "Campbell Soup",
+    "sector": "consumer",
+    "buyPrice": 86.56,
+    "currentPrice": 112.75,
+    "quantity": 12,
+    "purchaseDate": "2025-07-10"
+  },
+  {
+    "ticker": "COIN",
+    "companyName": "Coinbase Global",
+    "sector": "crypto",
+    "buyPrice": 109.94,
+    "currentPrice": 81.12,
+    "quantity": 187,
+    "purchaseDate": "2025-03-22"
+  },
+  {
+    "ticker": "MSTR",
+    "companyName": "MicroStrategy Inc.",
+    "sector": "crypto",
+    "buyPrice": 34.05,
+    "currentPrice": 23.12,
+    "quantity": 19,
+    "purchaseDate": "2025-12-17"
+  },
+  {
+    "ticker": "RIOT",
+    "companyName": "Riot Platforms",
+    "sector": "crypto",
+    "buyPrice": 110.59,
+    "currentPrice": 83.15,
+    "quantity": 472,
+    "purchaseDate": "2025-11-06"
+  },
+  {
+    "ticker": "MARA",
+    "companyName": "Marathon Digital",
+    "sector": "crypto",
+    "buyPrice": 142.19,
+    "currentPrice": 112.14,
+    "quantity": 399,
+    "purchaseDate": "2025-01-10"
+  },
+  {
+    "ticker": "CLSK",
+    "companyName": "CleanSpark Inc.",
+    "sector": "crypto",
+    "buyPrice": 138.87,
+    "currentPrice": 193.34,
+    "quantity": 356,
+    "purchaseDate": "2025-06-25"
+  },
+  {
+    "ticker": "HUT",
+    "companyName": "Hut 8 Mining",
+    "sector": "crypto",
+    "buyPrice": 41.49,
+    "currentPrice": 48.31,
+    "quantity": 359,
+    "purchaseDate": "2025-04-11"
+  },
+  {
+    "ticker": "BTBT",
+    "companyName": "Bit Digital Inc.",
+    "sector": "crypto",
+    "buyPrice": 146.04,
+    "currentPrice": 184.92,
+    "quantity": 448,
+    "purchaseDate": "2024-07-18"
+  },
+  {
+    "ticker": "BITF",
+    "companyName": "Bitfarms Ltd.",
+    "sector": "crypto",
+    "buyPrice": 125.91,
+    "currentPrice": 162.25,
+    "quantity": 312,
+    "purchaseDate": "2023-12-07"
+  },
+  {
+    "ticker": "SI",
+    "companyName": "Silvergate Capital",
+    "sector": "crypto",
+    "buyPrice": 104.46,
+    "currentPrice": 123.47,
+    "quantity": 216,
+    "purchaseDate": "2025-02-20"
+  },
+  {
+    "ticker": "CIFR",
+    "companyName": "Cipher Mining",
+    "sector": "crypto",
+    "buyPrice": 112.03,
+    "currentPrice": 138.93,
+    "quantity": 32,
+    "purchaseDate": "2024-12-20"
+  }
+]
